@@ -1,9 +1,11 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:student_record/database/models/studentModel.dart';
 import 'package:student_record/database/functions/db_functions.dart';
+import 'package:student_record/database/models/studentModel.dart';
+
 import '../../Widgets/input_field_widget.dart';
 
 // ignore: must_be_immutable
@@ -98,7 +100,6 @@ class _InputPageState extends State<InputPage> {
               key: formkey,
               child: ListView(
                 children: [
-//GestureDetector() to change img onTap on CircleAvatar
                   GestureDetector(
                     onTap: () => pickImage(),
                     child: Stack(
